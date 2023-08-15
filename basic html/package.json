@@ -1,0 +1,22 @@
+{
+  "name": "basic-html",
+  "version": "1.0.0",
+  "description": "React App",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polachandu/React.git#main"
+  },
+  "keywords": [
+    "Chandu"
+  ],
+  "author": "Chandrahas Reddy Pola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polachandu/React/issues"
+  },
+  "homepage": "https://github.com/polachandu/React/tree/main#readme"
+}
