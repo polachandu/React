@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/polachandu/React/issues"
   },
-  "homepage": "https://github.com/polachandu/React/tree/main#readme"
+  "homepage": "https://github.com/polachandu/React/tree/main#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
 }
