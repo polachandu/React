@@ -18,6 +18,7 @@
 * If package.json and package-lock.json files you can regenerate all your dependecies even if someone deletes the node_modules folder. command -> npm install
 * To build the app using parcle command -> npx parcel <source file> in our case it's index.html so command -> npx parcel index.html. This command will create a server for us and host the application in that port
 * npx means executing the package
+--------------------------------------------------------------------------------------------------
 # PARCEL(parceljs.org) Usages:
 - Dev Build
 - Local Server
@@ -31,4 +32,5 @@
 - Error Handling
 - Tree Shaking Algorithm which means removes the unused code
 - Different Dev and prod build
+--------------------------------------------------------------------------------------------------
 * Dist folder contains the Dev builds
