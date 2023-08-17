@@ -31,3 +31,4 @@
 - Error Handling
 - Tree Shaking Algorithm which means removes the unused code
 - Different Dev and prod build
+* Dist folder contains the Dev builds
