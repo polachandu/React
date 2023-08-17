@@ -1,2 +1,4 @@
 .DS_Store
 basic html/node_modules
+basic html/.parcel-cache
+basic html/dist

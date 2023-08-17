@@ -1,3 +1,7 @@
+* To get react into our app there are two ways one is via CDN link and other is via npm.
+* via CDN links it is not a preferred way into our project because it make a network call and it's a costly operation
+* Get react through package command -> npm install react. react is a normal dependency
+* npm install react-dom is to install react-dom
 * npm is a package manager but not node package manager.
 * Package and dependencies are same thing.
 * package.json is a configurations for npm.
@@ -12,3 +16,5 @@
 * Every dependency in a node_modules folder has a package.json file
 * node_modules folder is a collection of dependencies.
 * If package.json and package-lock.json files you can regenerate all your dependecies even if someone deletes the node_modules folder. command -> npm install
+* To build the app using parcle command -> npx parcel <source file> in our case it's index.html so command -> npx parcel index.html. This command will create a server for us and host the application in that port
+* npx means executing the package
