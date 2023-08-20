@@ -34,3 +34,5 @@
 - Different Dev and prod build
 --------------------------------------------------------------------------------------------------
 * Dist folder contains the Dev builds
+* To create a prod build command -> npx parcel build index.html. index.html is the entry point. You can find package.json as main(i.e entry point) 
+* To support different browsers we have to include the browerslist in package.json

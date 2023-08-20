@@ -2,7 +2,6 @@
   "name": "basic-html",
   "version": "1.0.0",
   "description": "React App",
-  "main": "app.js",
   "scripts": {
     "test": "jest"
   },
@@ -26,5 +25,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist": [
+     "last 10 versions"
+  ]
 }
