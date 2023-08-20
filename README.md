@@ -36,3 +36,8 @@
 * Dist folder contains the Dev builds
 * To create a prod build command -> npx parcel build index.html. index.html is the entry point. You can find package.json as main(i.e entry point) 
 * To support different browsers we have to include the browerslist in package.json
+--------------------------------------------------------------------------------------------------
+* Instead of npm parcel index.html and npm parcel build index.html we can run the scripts by mentioning in package.json file.
+* npm run start, npm run build where start, build are mentioned in the scripts of package.json file
+* npm run start and npm start are same. start was the keyword in the npm. But it is not same for npm run build and npm build.
+* DOM Elements are html elements
