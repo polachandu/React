@@ -52,3 +52,7 @@
 * jsx is not html inside javaScript. JSX is a html like syntax
 * This is completely through React: const heading = React.createElement("h1",{ id: "heading" },"Hey Chandu"); . This is through core of React and it is not developer friendly.
 * This is using JSX: const jsxHeading = <h1 id="heading">Hey Chandu by JSX</h1>. Both are same.
+* ES6 called as ECMSScript language that javaScript engine(or webBrowser) understand.
+* JSX is transpiled before it reaches to JSEngine and transipling is done by PARCEL(Babel package does that to be honest).
+* Babel job is to convert jsx code into core react.
+* Babel is a javaScript compiler.
