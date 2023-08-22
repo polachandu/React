@@ -40,4 +40,15 @@
 * Instead of npm parcel index.html and npm parcel build index.html we can run the scripts by mentioning in package.json file.
 * npm run start, npm run build where start, build are mentioned in the scripts of package.json file
 * npm run start and npm start are same. start was the keyword in the npm. But it is not same for npm run build and npm build.
+--------------------------------------------------------------------------------------------------
+# React
 * DOM Elements are html elements
+* To create a element in react we use React.createElement. We pass threee arugments to this. First one tag name like "h1", second one is array of attributes like id and third one is child.
+* React.createElement("h1",{ id: "heading" },"Hey Chandu") where it creates an object.
+* When we render this object with HTML then it converts into HTML that we see on webpage.
+--------------------------------------------------------------------------------------------------
+# JSX React
+* We can write without using jsx but jsx makes developers life easy
+* jsx is not html inside javaScript. JSX is a html like syntax
+* This is completely through React: const heading = React.createElement("h1",{ id: "heading" },"Hey Chandu"); . This is through core of React and it is not developer friendly.
+* This is using JSX: const jsxHeading = <h1 id="heading">Hey Chandu by JSX</h1>. Both are same.

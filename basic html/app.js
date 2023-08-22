@@ -33,3 +33,17 @@ import ReactDOM from "react-dom/client";
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // root.render(parent);
+
+
+
+
+//-------------------------------------------------------------------------------------------------
+
+const heading = React.createElement("h1",{ id: "heading" },"Hey Chandu");
+
+const jsxHeading = <h1 id="heading">Hey Chandu by JSX</h1>
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxHeading);
+
