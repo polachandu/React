@@ -35,15 +35,20 @@ import ReactDOM from "react-dom/client";
 
 const heading = React.createElement("h1", { id: "heading" }, "Hey Chandu");
 
-// React Element
-const jsxHeading = (
-  <h1 className="head" tabIndex="5" id="heading">
+const Title = () => (
+ <h1 className="head" tabIndex="5" id="heading">
     Hey Chandu by JSX
   </h1>
 );
 
-//React Component
+//React Functional Component
 
+const HeadingComponent = () => (
+  <div id ="container">
+   <Title/>
+  <h1>React Functional Component</h1>
+  </div>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);

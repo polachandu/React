@@ -60,4 +60,6 @@
 * Everything in React is a component. Button is a component, navbar is a component and so on. 
 * There are two types of Component
 1. Class based Component - old way and no buddy is using this now.
-2. Functional Component - new way and currently every one is using.
+2. Functional Component - new way and currently every one is using.(It is just a normal javascript function which returns some JSX element)
+
+
