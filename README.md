@@ -56,3 +56,8 @@
 * JSX is transpiled before it reaches to JSEngine and transipling is done by PARCEL(Babel package does that to be honest).
 * Babel job is to convert jsx code into core react.
 * Babel is a javaScript compiler.
+--------------------------------------------------------------------------------------------------
+* Everything in React is a component. Button is a component, navbar is a component and so on. 
+* There are two types of Component
+1. Class based Component - old way and no buddy is using this now.
+2. Functional Component - new way and currently every one is using.

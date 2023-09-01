@@ -1,15 +1,15 @@
-import React  from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 
 /**
- * 
+ *
  * <div id="parent">
  *  <div id="child">
  *  <h1>I'm an h1 tag</h1>
  *  <h2>I'm an h2 tag</h2>
  * </div>
  * </div>
- * 
+ *
  * parent is a ReactElement that converts into HTML(Where browser understands)
  */
 
@@ -25,25 +25,25 @@ import ReactDOM from "react-dom/client";
 //                         React.createElement("h2",{},"I'm an h2 tag")])
 //                     ]);
 
-
-
-
 // const heading = React.createElement("h1",{id:"heading"},"Hello World from REACT!");
 // console.log(heading);
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // root.render(parent);
 
-
-
-
 //-------------------------------------------------------------------------------------------------
 
-const heading = React.createElement("h1",{ id: "heading" },"Hey Chandu");
+const heading = React.createElement("h1", { id: "heading" }, "Hey Chandu");
 
-const jsxHeading = <h1 id="heading">Hey Chandu by JSX</h1>
+// React Element
+const jsxHeading = (
+  <h1 className="head" tabIndex="5" id="heading">
+    Hey Chandu by JSX
+  </h1>
+);
+
+//React Component
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(jsxHeading);
-
