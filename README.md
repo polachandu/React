@@ -61,5 +61,6 @@
 * There are two types of Component
 1. Class based Component - old way and no buddy is using this now.
 2. Functional Component - new way and currently every one is using.(It is just a normal javascript function which returns some JSX element)
-
-
+* To place a component inside a component(nested components or components composition) we should place the nested component inside the tags like this <Title />
+* Always try to use arrow functions while writing the code because it's cleaner one.
+* JSX Starts from open paranthesis and Ends with close paranthesis after arrow function.In between these paranthesis we can write any javascript code in curely braces . This exactly means JSX is a mixture of HTML and JavaScript.
