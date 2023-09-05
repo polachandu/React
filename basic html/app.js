@@ -32,25 +32,33 @@ import ReactDOM from "react-dom/client";
 // root.render(parent);
 
 //-------------------------------------------------------------------------------------------------
-
+const number=10000;
 const heading = React.createElement("h1", { id: "heading" }, "Hey Chandu");
 
-const Title = function() {
-  return (
- <h1 className="head" tabIndex="5" id="heading">
-    Hey Chandu by JSX
-  </h1>
-);
-  }
+const elem = <span>Hey </span>;
+
+  
 
 //React Functional Component
 
 const HeadingComponent = () => (
   <div id ="container">
-   <Title/>
+    <h2>{number}</h2>
   <h1>React Functional Component</h1>
+  {title}
   </div>
 );
+
+const title = (
+  <h1 className="head" tabIndex="5" id="heading">
+   {elem}
+     Chandu by JSX
+     </h1>
+ );
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent />);
+root.render(<HeadingComponent />); 
+// This is the syntax to render the React Componenet(Functional Component)
+// root.render(title)
+// This is the syntax to render the React object
