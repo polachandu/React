@@ -35,11 +35,13 @@ import ReactDOM from "react-dom/client";
 
 const heading = React.createElement("h1", { id: "heading" }, "Hey Chandu");
 
-const Title = () => (
+const Title = function() {
+  return (
  <h1 className="head" tabIndex="5" id="heading">
     Hey Chandu by JSX
   </h1>
 );
+  }
 
 //React Functional Component
 
