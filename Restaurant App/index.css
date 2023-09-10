@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo{
+    width: 150px ;
+}
+
+.nav-items > ul{
+    font-size: 18px;
+    display: flex;
+    list-style-type: none;
+    padding-top: 6%;
+}
+
+.nav-items > ul > li{
+   padding: 10px;
+   margin: 10px;
+
+}

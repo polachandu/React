@@ -1,0 +1,18 @@
+{
+  "name": "restaurant-app",
+  "version": "1.0.0",
+  "description": "Build a restaurant app",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Chandu",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  }
+}

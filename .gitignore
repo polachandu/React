@@ -3,3 +3,6 @@ basic html/node_modules
 basic html/.parcel-cache
 basic html/dist
 .vscode
+Restaurant App/node_modules
+Restaurant App/.parcel-cache
+Restaurant App/dist

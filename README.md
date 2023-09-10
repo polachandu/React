@@ -1,5 +1,6 @@
 * To get react into our app there are two ways one is via CDN link and other is via npm.
 * via CDN links it is not a preferred way into our project because it make a network call and it's a costly operation
+* To create a react app use this command -> npm init
 * Get react through package command -> npm install react. react is a normal dependency
 * npm install react-dom is to install react-dom
 * npm is a package manager but not node package manager.
@@ -64,3 +65,5 @@
 * To place a component inside a component(nested components or components composition) we should place the nested component inside the tags like this <Title />
 * Always try to use arrow functions while writing the code because it's cleaner one.
 * JSX Starts from open paranthesis and Ends with close paranthesis after arrow function.In between these paranthesis we can write any javascript code in curely braces . This exactly means JSX is a mixture of HTML and JavaScript.
+----------------------------------------------------------------------------------------------------
+What does display flex do?
