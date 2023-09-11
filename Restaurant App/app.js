@@ -8,6 +8,8 @@ import ReactDOM from "react-dom/client";
  *  - Search
  *  - Restaurant Container
  *     - RestaurantCard
+ *        - Img
+ *        - Name of Res, Star Rating, cuisine, delivery time
  * Footer
  *  - CopyRight
  *  - Links
@@ -34,6 +36,14 @@ const HeaderComponent = () => {
   );
 };
 
+const RestaurantCard = () => {
+    return(
+        <div className="RestaurantCard">
+            <h3 className="RestaurantName">Lazy Aishwarya</h3>
+        </div>
+    )
+}
+
 const BodyComponent = () =>{
     return(
         <div className="body">
@@ -41,6 +51,7 @@ const BodyComponent = () =>{
                 Search
             </div>
             <div className="RestroContainer"></div>
+            <RestaurantCard/>
 
         </div>
     )

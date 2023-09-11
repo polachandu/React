@@ -66,4 +66,24 @@
 * Always try to use arrow functions while writing the code because it's cleaner one.
 * JSX Starts from open paranthesis and Ends with close paranthesis after arrow function.In between these paranthesis we can write any javascript code in curely braces . This exactly means JSX is a mixture of HTML and JavaScript.
 ----------------------------------------------------------------------------------------------------
+* To write an in-style css code in js file, just add style in the div tag and js object into the style where js object contains css properties.
+* But in-style not a preferred way.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Questions:
 What does display flex do?
