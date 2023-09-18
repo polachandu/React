@@ -36,13 +36,17 @@ const HeaderComponent = () => {
   );
 };
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
     return(
         <div className="RestaurantCard">
-            <h3 className="RestaurantName">Lazy Aishwarya</h3>
+            <img className="res-img" src = "https://www.thedeliciouscrescent.com/wp-content/uploads/2019/04/Chicken-Biryani-Square.jpg"/>
+            <p className="RestaurantName">{props.resName}</p>
+            <p className="Cusine">{props.cusine}</p>
+            <p className="Ratings">5.0</p>
+            <p className="ETA">20 mins</p>
         </div>
     )
-}
+};
 
 const BodyComponent = () =>{
     return(
@@ -50,18 +54,19 @@ const BodyComponent = () =>{
             <div className="search">
                 Search
             </div>
-            <div className="RestroContainer"></div>
-            <RestaurantCard/>
-
+            <div className="RestroContainer">
+            <RestaurantCard resName="Lazy Aishwarya" cusine="Biryani, North Indian, Italian, Mexican"/>
+            <RestaurantCard resName= "Active Chandu" cusine = "Burger, Chicken Lollipops"/>
+            </div>
         </div>
     )
-}
+};
 
 const AppLayoutComponent = () => {
   return (
     <div className="app">
       <HeaderComponent />
-      <BodyComponent/>
+      <BodyComponent />
     </div>
   );
 };
