@@ -68,7 +68,11 @@
 ----------------------------------------------------------------------------------------------------
 * To write an in-style css code in js file, just add style in the div tag and js object into the style where js object contains css properties.
 * But in-style not a preferred way.
-
+-----------------------------------------------------------------------------------------------------
+* props is properties which you can pass dynamically data into component.
+* props are just arguments to a function.
+* what is the CONFIG DRIVEN UI?
+* 
 
 
 
