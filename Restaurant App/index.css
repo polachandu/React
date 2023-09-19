@@ -23,8 +23,7 @@
 
 .RestaurantCard{
     padding: 5px;
-    width: 200px;
-    height: 400px;
+    width: 180px;
     margin: 5px;;
     background-color: #f0f0f0;
 }
@@ -40,24 +39,12 @@
 
 .res-img{
     width: 100%;
+    height: 50%;
 }
 
 .RestroContainer{
     display: flex;
     flex-wrap: wrap;
 }
-.RestaurantName{
-    margin: 1px;
-    font-size: 30px;
-}
-.Cusine{
-    margin: 1px;
-}
 
-.Ratings{
-    margin: 1px;
-}
-.ETA{
-    margin: 1px;
-}
 

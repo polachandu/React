@@ -73,6 +73,9 @@
 * props are just arguments to a function.
 * what is the CONFIG DRIVEN UI?
 * Go through PROPS.
+* ?. is called optional chaining. Go through it more.
+* Usage of "key" is it doesn't render the old items and key should be unique. It will be useful to the render cycle. Whenever we write a map make a practise of using key.
+* 
 
 
 
