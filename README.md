@@ -72,7 +72,7 @@
 * props is properties which you can pass dynamically data into component.
 * props are just arguments to a function.
 * what is the CONFIG DRIVEN UI?
-* 
+* Go through PROPS.
 
 
 
