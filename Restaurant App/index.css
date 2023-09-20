@@ -28,13 +28,15 @@
     background-color: #f0f0f0;
 }
 
-.search{
+.filter-btn{
     padding: 10px;
+    margin: 10px;
+    cursor: grab;
 }
 
 .RestaurantCard:hover{
     border: 1px solid black;
-    cursor: pointer;
+    cursor: grab;
 }
 
 .res-img{
