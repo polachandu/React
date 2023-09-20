@@ -75,7 +75,14 @@
 * Go through PROPS.
 * ?. is called optional chaining. Go through it more.
 * Usage of "key" is it doesn't render the old items and key should be unique. It will be useful to the render cycle. Whenever we write a map make a practise of using key.
+-----------------------------------------------------------------------------------------------------
+* Everything REACT do that normal HTML,CSS and JS can do. The beauty of using Library or Frame work is developer friendly like write less code and more on the webpage.
+* To export a component we use this code "export default <component-name>"
+* To export multiple things just write export infront on the things that you want to export, it is called as named exports. To import these named exports we have to write these in curly braces.
+-----------------------------------------------------------------------------------------------------
+# REACT HOOKS
 * 
+
 
 
 
