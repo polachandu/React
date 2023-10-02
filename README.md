@@ -19,6 +19,7 @@
 * If package.json and package-lock.json files you can regenerate all your dependecies even if someone deletes the node_modules folder. command -> npm install
 * To build the app using parcle command -> npx parcel <source file> in our case it's index.html so command -> npx parcel index.html. This command will create a server for us and host the application in that port
 * npx means executing the package
+link: https://babeljs.io/
 --------------------------------------------------------------------------------------------------
 # PARCEL(parceljs.org) Usages:
 - Dev Build
@@ -84,10 +85,15 @@
 * When we say REACT is fast that means REACT is fast in DOM manipulation.
 * A Hook is a normal js function which is given by react and it is in-built which has super power behind the scenes.
 * Two important HOOKS:
-* 1. useState() - It gives super powerful variable. Import from react like named import. When ever the state variable changes react re-renders the component.
-* 2. useEffect()
-* 
+* 1. useState() - It gives super powerful variable. Import from react like named import. When ever the state variable changes react re-renders the component. It will return an array.
+* 2. useEffect() - It takes two arguments. One is call back function and the second one is dependency array. Call back function is called when the page finished it's rendering.
 
+-----------------------------------------------------------------------------------------------------
+# Reconciliation Algorithm
+* React uses recon algo and it is also known as react fiber.
+* This algorithm creates a virtual DOM which is nothing but representataion of original DOM. Virtual DOM stores the Objects.
+link: https://github.com/acdlite/react-fiber-architecture
+-----------------------------------------------------------------------------------------------------
 
 
 
@@ -106,3 +112,4 @@
 
 Questions:
 What does display flex do?
+Go through fetch(), await and fetch()
