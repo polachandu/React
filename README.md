@@ -81,6 +81,11 @@
 * To export multiple things just write export infront on the things that you want to export, it is called as named exports. To import these named exports we have to write these in curly braces.
 -----------------------------------------------------------------------------------------------------
 # REACT HOOKS
+* When we say REACT is fast that means REACT is fast in DOM manipulation.
+* A Hook is a normal js function which is given by react and it is in-built which has super power behind the scenes.
+* Two important HOOKS:
+* 1. useState() - It gives super powerful variable. Import from react like named import. When ever the state variable changes react re-renders the component.
+* 2. useEffect()
 * 
 
 
