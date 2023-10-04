@@ -95,7 +95,7 @@ link: https://babeljs.io/
 link: https://github.com/acdlite/react-fiber-architecture
 -----------------------------------------------------------------------------------------------------
 # Shimmmer UI
-* 
+* https://medium.com/lattice-what-is/shimmer-ui-a-better-way-to-show-loading-states-aa1f4e563d17
 
 
 
