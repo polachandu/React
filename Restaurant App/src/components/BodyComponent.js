@@ -2,6 +2,8 @@ import RestaurantCard from "./RestaurantCard";
 import carts from "../utils/mockData";
 import { useState, useEffect } from "react";
 import { async } from "rxjs";
+import Shimmer from "./Shimmer";
+
 const BodyComponent = () => {
   const [listOfCarts, setCarts] = useState(carts);
   useEffect(() => {
@@ -11,9 +13,14 @@ const BodyComponent = () => {
   const fetchData = async () => {
     const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.385044&lng=78.486671&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING").then(res => res.json());
     console.log(response);
-    setCarts(response.data.cards[5].card.card.gridElements.infoWithStyle.restaurants);
-  }
+    setCarts(response?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  };
 
+  if(listOfCarts.length === 0){
+    return <Shimmer/>
+  };
+
+  
   return (
     <div className="body">
       <div className="filter">
