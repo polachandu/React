@@ -13,15 +13,13 @@ const BodyComponent = () => {
   const fetchData = async () => {
     const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.385044&lng=78.486671&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING").then(res => res.json());;
     console.log(response);
-    setListOfCarts(response?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-  };
-
-  if(listOfCarts?.length === 0){
-    return <Shimmer/>
+    setListOfCarts(response?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
 
   
-  return (
+
+  
+  return listOfCarts?.length === 0 ? (<Shimmer />) : (
     <div className="body">
       <div className="filter">
         <button
