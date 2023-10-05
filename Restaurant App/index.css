@@ -23,7 +23,8 @@
 
 .RestaurantCard{
     padding: 5px;
-    width: 180px;
+    width: 200px;
+    height: 400px;
     margin: 5px;;
     background-color: #f0f0f0;
 }
@@ -47,6 +48,18 @@
 .RestroContainer{
     display: flex;
     flex-wrap: wrap;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-cards{
+    margin: 5px;
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
 }
 
 
