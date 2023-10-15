@@ -100,6 +100,7 @@ link: https://github.com/acdlite/react-fiber-architecture
 * Whenever if there is an update in state variable, REACT re-render the component that means REACT triggers the RECONSICIALTION ALGORITHM.
 -----------------------------------------------------------------------------------------------------
 ## DIVE INTO HOOKS
+* Whenever there is "use" that means it is a hook that use in REACT industry. 
 # useEffect()
 * Whenever useEffect is called, useEffect has two parameters one is call back function and other is dependency array.
 * For useEffect function call back is mandatory. If no depedency array is used the call back function is called for every render
@@ -112,7 +113,10 @@ link: https://github.com/acdlite/react-fiber-architecture
 # REACT ROUTING
 * To install "npm i react-router-dom" 
 * In order to create ROUTES we have to create ROUTING CONFIGURATION. That can be done in App.js
-* 
+* CreateBrowserRouter takes a list of paths
+* RouterProvider provides the routing configuration to our app.
+* There are many routers that react router provides. But createBrowserRouter is the one that react suggests. link: https://reactrouter.com/en/main/routers/create-browser-router
+* useRouteError is a hook that makes the page as error handling and more customised as per the user experience.
 
 
 
