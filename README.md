@@ -111,6 +111,8 @@ link: https://github.com/acdlite/react-fiber-architecture
 -----------------------------------------------------------------------------------------------------
 # REACT ROUTING
 * To install "npm i react-router-dom" 
+* In order to create ROUTES we have to create ROUTING CONFIGURATION. That can be done in App.js
+* 
 
 
 
