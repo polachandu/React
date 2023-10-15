@@ -1,9 +1,12 @@
+import { useEffect } from "react/cjs/react.production.min";
 import { APP_LOGO_URL } from "../utils/constants";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const HeaderComponent = () => {
-  
-  const[btnNameReact, setBtnNameReact] = useState("LOGIN");
+  const [btnNameReact, setBtnNameReact] = useState("LOGIN");
+  useEffect(() => {
+    console.log("useEffect called")
+  },[]);
   return (
     <div className="header">
       <div className="logo-container">
@@ -18,7 +21,9 @@ const HeaderComponent = () => {
           <button
             className="login"
             onClick={() => {
-              btnNameReact === "LOGIN" ? setBtnNameReact("LOGOUT") : setBtnNameReact("LOGIN");
+              btnNameReact === "LOGIN"
+                ? setBtnNameReact("LOGOUT")
+                : setBtnNameReact("LOGIN");
             }}
           >
             {btnNameReact}

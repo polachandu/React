@@ -98,6 +98,19 @@ link: https://github.com/acdlite/react-fiber-architecture
 * https://medium.com/lattice-what-is/shimmer-ui-a-better-way-to-show-loading-states-aa1f4e563d17
 -----------------------------------------------------------------------------------------------------
 * Whenever if there is an update in state variable, REACT re-render the component that means REACT triggers the RECONSICIALTION ALGORITHM.
+-----------------------------------------------------------------------------------------------------
+## DIVE INTO HOOKS
+# useEffect()
+* Whenever useEffect is called, useEffect has two parameters one is call back function and other is dependency array.
+* For useEffect function call back is mandatory. If no depedency array is used the call back function is called for every render
+* If dependency array is there and it is empty then useEffect will be called only once and it is at initial render.
+* If dependency array is there and it is not empty then useEffect will be called when ever the variables in the array is updated.
+# useState()
+* Always call the hooks inside of the component. It doesn't make sense if you called it outside of component.
+* Never use the useState hook inside the condition loops, for loops and fucntion. It makes the app inconsistency.
+-----------------------------------------------------------------------------------------------------
+# REACT ROUTING
+* To install "npm i react-router-dom" 
 
 
 
