@@ -117,6 +117,10 @@ link: https://github.com/acdlite/react-fiber-architecture
 * RouterProvider provides the routing configuration to our app.
 * There are many routers that react router provides. But createBrowserRouter is the one that react suggests. link: https://reactrouter.com/en/main/routers/create-browser-router
 * useRouteError is a hook that makes the page as error handling and more customised as per the user experience.
+* Outlet is the Component that is from REACT ROUTER. It acts like a placeholder in replaces the whatever the components is present in the path.
+* You can navigate to other page by using anchor tags in HTML but that makes the app slower. Instead of using anchor tags REACT provided us "link" that is from REACT ROUTER DOM. Link component exactly works like an anchor tag. Link makes the app faster than anchor tag
+* 
+
 
 
 
