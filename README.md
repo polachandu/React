@@ -119,7 +119,9 @@ link: https://github.com/acdlite/react-fiber-architecture
 * useRouteError is a hook that makes the page as error handling and more customised as per the user experience.
 * Outlet is the Component that is from REACT ROUTER. It acts like a placeholder in replaces the whatever the components is present in the path.
 * You can navigate to other page by using anchor tags in HTML but that makes the app slower. Instead of using anchor tags REACT provided us "link" that is from REACT ROUTER DOM. Link component exactly works like an anchor tag. Link makes the app faster than anchor tag
-* 1:34:51
+## Whenever you use a map always assign a key to it else REACT throws an ERROR.
+* useParams hook is to read the param from the url
+* 
 
 
 
