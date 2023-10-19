@@ -121,7 +121,7 @@ link: https://github.com/acdlite/react-fiber-architecture
 * You can navigate to other page by using anchor tags in HTML but that makes the app slower. Instead of using anchor tags REACT provided us "link" that is from REACT ROUTER DOM. Link component exactly works like an anchor tag. Link makes the app faster than anchor tag
 ## Whenever you use a map always assign a key to it else REACT throws an ERROR.
 * useParams hook is to read the param from the url
-* 
+* 02:01:28
 
 
 
