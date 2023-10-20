@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
-import { RESTRO_MENU_API } from "../utils/constants"
+import { RESTRO_MENU_API_HEAD } from "../utils/constants"
+import { RESTRO_MENU_API_TAIL } from "../utils/constants"
 const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState(null);
 
@@ -14,7 +15,7 @@ const RestaurantMenu = () => {
 
   const fetchMenu = async () => {
     const response = await fetch(
-      RESTRO_MENU_API + resId 
+      RESTRO_MENU_API_HEAD + resId + RESTRO_MENU_API_TAIL
     ).then((res) => (res.json()))
     console.log(response);
     setResInfo(response.data);

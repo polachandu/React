@@ -121,7 +121,11 @@ link: https://github.com/acdlite/react-fiber-architecture
 * You can navigate to other page by using anchor tags in HTML but that makes the app slower. Instead of using anchor tags REACT provided us "link" that is from REACT ROUTER DOM. Link component exactly works like an anchor tag. Link makes the app faster than anchor tag
 ## Whenever you use a map always assign a key to it else REACT throws an ERROR.
 * useParams hook is to read the param from the url
-* 02:01:28
+* Link is a component which is given by react router dom and behind the scenes Link is using anchor tag <a href="">
+* Link is a wrapper over anchor tag
+-----------------------------------------------------------------------------------------------------
+* In current world every one is developing in react through functional based components. Earlier it was class based components.
+*
 
 
 
@@ -141,3 +145,4 @@ link: https://github.com/acdlite/react-fiber-architecture
 Questions:
 What does display flex do?
 Go through fetch(), await and fetch()
+Clien Side Routing vs Server Side Routing
