@@ -125,7 +125,11 @@ link: https://github.com/acdlite/react-fiber-architecture
 * Link is a wrapper over anchor tag
 -----------------------------------------------------------------------------------------------------
 * In current world every one is developing in react through functional based components. Earlier it was class based components.
-*
+* Class Baesed Components vs Functional Based Components
+* Never update state variables directly in Class Based Components
+* What exactly happens in rendering?
+* Life Cycle of Functional Based Component & Class Based Component
+* 
 
 
 
