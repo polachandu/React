@@ -129,7 +129,11 @@ link: https://github.com/acdlite/react-fiber-architecture
 * Never update state variables directly in Class Based Components
 * What exactly happens in rendering?
 * Life Cycle of Functional Based Component & Class Based Component
-* 
+* In class based Components 1st constructor will be called then render will be called
+* Important use case of ComponentDidMount is to make API calls. The reason why they use it in componentDidMount is because it comes into the picture one complete render is happened.
+* React lifecycle methods diagram for class based components.
+* Render phase happens fast but Commit phase is slow in REACT
+* Never ever compare functional based components to class based components in REACT.
 
 
 
