@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import { async } from "rxjs";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const BodyComponent = () => {
   const [listOfCarts, setListOfCarts] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurants] = useState([])
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState([]);
+  const onlineStatus = useOnlineStatus();
 
   useEffect(() => {
     fetchData();
@@ -20,13 +22,22 @@ const BodyComponent = () => {
     ).then((res) => res.json());
     console.log(response);
     setListOfCarts(
-      response?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      response?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
     );
     setFilteredRestaurants(
-      response?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      response?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
     );
   };
 
+  if (onlineStatus === false)
+    return (
+      <h1>
+        "Opps! you are not connected to Internet. Please Check your network
+        connection.
+      </h1>
+    );
   return listOfCarts?.length === 0 ? (
     <Shimmer />
   ) : (
@@ -41,11 +52,17 @@ const BodyComponent = () => {
               setSearchText(e.target.value);
             }}
           />
-          <button onClick={() => {console.log(searchText);
-            const filteredRestaurants = listOfCarts.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()))
-            setFilteredRestaurants(filteredRestaurants)
-          }
-          }>Search</button>
+          <button
+            onClick={() => {
+              console.log(searchText);
+              const filteredRestaurants = listOfCarts.filter((res) =>
+                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              );
+              setFilteredRestaurants(filteredRestaurants);
+            }}
+          >
+            Search
+          </button>
         </div>
         <button
           className="filter-btn"
@@ -61,7 +78,12 @@ const BodyComponent = () => {
       </div>
       <div className="RestroContainer">
         {filteredRestaurants?.map((restaurant) => (
-          <Link key = {restaurant.info.id} to={"/restaurants/"+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/> </Link>
+          <Link
+            key={restaurant.info.id}
+            to={"/restaurants/" + restaurant.info.id}
+          >
+            <RestaurantCard key={restaurant.info.id} resData={restaurant} />{" "}
+          </Link>
         ))}
       </div>
     </div>
