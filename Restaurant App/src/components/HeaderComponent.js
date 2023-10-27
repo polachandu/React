@@ -11,12 +11,12 @@ const HeaderComponent = () => {
     console.log("useEffect called")
   },[]);
   return (
-    <div className="header">
+    <div className="flex justify-between">
       <div className="logo-container">
-        <img className="logo" src={APP_LOGO_URL} />
+        <img className="w-56" src={APP_LOGO_URL} />
       </div>
       <div className="nav-items">
-        <ul>
+        <ul className="flex p-4 m-4">
           <li>Online Status:{onlineStatus ? "🟢 " : "🔴"}</li>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/grocery">Grocery</Link></li>

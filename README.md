@@ -140,7 +140,13 @@ link: https://github.com/acdlite/react-fiber-architecture
 * It also called as Chunking, Dynamic Loading, Code Splitting, On Demand Loading, Lazy loading
 * Instead of importing any component we can call the component using Lazy function. Lazy is given by REACT package.
 * Lazy functions takes a call back function and use import keyword to import the component.Here import is a function and it takes the path of the Component.
+-----------------------------------------------------------------------------------------------------
+# Tailwind CSS
+* To install: npm install -D tailwindcss postcss
+* To start: npx tailwindcss init by using parcel
+* postcss is a tool for transforming CSS with JavaScript
 * 
+
 
 
 
@@ -163,3 +169,4 @@ Go through fetch(), await and fetch()
 Clien Side Routing vs Server Side Routing
 Read about Lazy and Suspense Component
 Read about window.addEventListener()
+Go through SASS, Styled Components, Material UI, Bootstrap
