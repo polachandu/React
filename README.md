@@ -134,6 +134,13 @@ link: https://github.com/acdlite/react-fiber-architecture
 * React lifecycle methods diagram for class based components.
 * Render phase happens fast but Commit phase is slow in REACT
 * Never ever compare functional based components to class based components in REACT.
+* It is not mandatory to use prefix as "use" for a HOOK but REACT recommends to do it.
+-----------------------------------------------------------------------------------------------------
+# Bundling
+* It also called as Chunking, Dynamic Loading, Code Splitting, On Demand Loading, Lazy loading
+* Instead of importing any component we can call the component using Lazy function. Lazy is given by REACT package.
+* Lazy functions takes a call back function and use import keyword to import the component.Here import is a function and it takes the path of the Component.
+* 
 
 
 
@@ -154,3 +161,5 @@ Questions:
 What does display flex do?
 Go through fetch(), await and fetch()
 Clien Side Routing vs Server Side Routing
+Read about Lazy and Suspense Component
+Read about window.addEventListener()

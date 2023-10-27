@@ -22,11 +22,11 @@ const BodyComponent = () => {
     ).then((res) => res.json());
     console.log(response);
     setListOfCarts(
-      response?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
+      response?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
     setFilteredRestaurants(
-      response?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
+      response?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
   };
