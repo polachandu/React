@@ -22,11 +22,11 @@ const BodyComponent = () => {
     ).then((res) => res.json());
     console.log(response);
     setListOfCarts(
-      response?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+      response?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
     setFilteredRestaurants(
-      response?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+      response?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
   };
@@ -42,17 +42,17 @@ const BodyComponent = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="filter flex">
+        <div className="search m-4 p-4">
           <input
             type="text"
-            className="search-box"
+            className="border border-solid border-black"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
           />
-          <button
+          <button className="px-4 bg-blue-300 m-4 rounded-lg"
             onClick={() => {
               console.log(searchText);
               const filteredRestaurants = listOfCarts.filter((res) =>
@@ -64,8 +64,8 @@ const BodyComponent = () => {
             Search
           </button>
         </div>
-        <button
-          className="filter-btn"
+        <div className="search m-4 p-4 felx items-center">
+        <button className="px-4 py-2 bg-gray-100 rounded-lg"
           onClick={() => {
             const filterCarts = listOfCarts.filter(
               (cart) => cart.info.avgRating > 4.0
@@ -75,8 +75,9 @@ const BodyComponent = () => {
         >
           Top Rated Restaurants
         </button>
+        </div>
       </div>
-      <div className="RestroContainer">
+      <div className="flex flex-wrap">
         {filteredRestaurants?.map((restaurant) => (
           <Link
             key={restaurant.info.id}

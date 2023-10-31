@@ -145,7 +145,8 @@ link: https://github.com/acdlite/react-fiber-architecture
 * To install: npm install -D tailwindcss postcss
 * To start: npx tailwindcss init by using parcel
 * postcss is a tool for transforming CSS with JavaScript
-* 
+* Cons: Poor readability
+* Pros: It will never ship the unused CSS.
 
 
 
@@ -170,3 +171,5 @@ Clien Side Routing vs Server Side Routing
 Read about Lazy and Suspense Component
 Read about window.addEventListener()
 Go through SASS, Styled Components, Material UI, Bootstrap
+what is REM in CSS.
+
