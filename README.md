@@ -147,8 +147,10 @@ link: https://github.com/acdlite/react-fiber-architecture
 * postcss is a tool for transforming CSS with JavaScript
 * Cons: Poor readability
 * Pros: It will never ship the unused CSS.
-
-
+-----------------------------------------------------------------------------------------------------
+# Higher Order Components
+* Higher Order Components is a function that takes the components and return the components.
+* 
 
 
 
