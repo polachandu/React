@@ -150,7 +150,8 @@ link: https://github.com/acdlite/react-fiber-architecture
 -----------------------------------------------------------------------------------------------------
 # Higher Order Components
 * Higher Order Components is a function that takes the components and return the components.
-* 
+* It takes the input as existing one and produces output as enhanced verison of existing one.
+* Spread Operator
 
 
 

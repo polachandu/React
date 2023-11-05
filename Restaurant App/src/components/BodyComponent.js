@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withOpenedLabel} from "./RestaurantCard";
 import carts from "../utils/mockData";
 import { useState, useEffect } from "react";
 import { async } from "rxjs";
@@ -11,6 +11,7 @@ const BodyComponent = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState([]);
   const onlineStatus = useOnlineStatus();
+  const RestaurantCardOpened = withOpenedLabel(RestaurantCard);
 
   useEffect(() => {
     fetchData();
@@ -22,11 +23,11 @@ const BodyComponent = () => {
     ).then((res) => res.json());
     console.log(response);
     setListOfCarts(
-      response?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+      response?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
     setFilteredRestaurants(
-      response?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+      response?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
   };
@@ -83,7 +84,7 @@ const BodyComponent = () => {
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
-            <RestaurantCard key={restaurant.info.id} resData={restaurant} />{" "}
+            {restaurant.info.isOpen ? (< RestaurantCardOpened resData={restaurant} />) : (< RestaurantCard resData={restaurant} />)}
           </Link>
         ))}
       </div>
