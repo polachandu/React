@@ -35,7 +35,7 @@ const RestaurantMenu = () => {
       </ul> */}
       {/* catagories accordian */}
       {categories.map((category) => (
-        <RestaurantCategory resCategory={category?.card?.card} />
+        <RestaurantCategory key = {category?.card?.card?.title} resCategory={category?.card?.card} showItems={true}/>
 ))}
     </div>
   );
