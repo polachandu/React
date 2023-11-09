@@ -1,12 +1,14 @@
 import { useEffect } from "react/cjs/react.production.min";
 import { APP_LOGO_URL } from "../utils/constants";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const HeaderComponent = () => {
   const [btnNameReact, setBtnNameReact] = useState("LOGIN");
   const onlineStatus = useOnlineStatus();
+  const { loggedInUser} = useContext(UserContext)
   useEffect(() => {
     console.log("useEffect called")
   },[]);
@@ -23,6 +25,7 @@ const HeaderComponent = () => {
           <li className="px-4"><Link to="/aboutUs">About Us</Link></li>
           <li className="px-4"><Link to="/contact">Contact Us</Link></li>
           <li className="px-4">Cart</li>
+          <li className="px-4 font-bold">{loggedInUser}</li>
           <button
             className="login"
             onClick={() => {

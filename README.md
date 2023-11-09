@@ -152,6 +152,11 @@ link: https://github.com/acdlite/react-fiber-architecture
 * Higher Order Components is a function that takes the components and return the components.
 * It takes the input as existing one and produces output as enhanced verison of existing one.
 * Spread Operator
+* In REACT data always flows in ONE Direction. Always from Parent Component to Child Component
+* Everything in REACT is built of Props and Hooks
+* One way to escape from Props Drilling is React COntext
+* There are two ways to get the data from Context one is using the hook(In functional Component) and other is using the Consumer Component(In class component)
+* 
 
 55:17
 
@@ -177,4 +182,8 @@ Read about Lazy and Suspense Component
 Read about window.addEventListener()
 Go through SASS, Styled Components, Material UI, Bootstrap
 what is REM in CSS.
+Lifting the state up
+props drilling
+Go through about userContext.Consumer and userContext.Provider
+
 
