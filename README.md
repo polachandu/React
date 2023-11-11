@@ -158,7 +158,28 @@ link: https://github.com/acdlite/react-fiber-architecture
 * There are two ways to get the data from Context one is using the hook(In functional Component) and other is using the Consumer Component(In class component)
 * 
 
-55:17
+-----------------------------------------------------------------------------------------------------
+# REDUX
+* React and Redux are different libraries
+* Redux is not MANDATORY and use the Redux superpowers wisely
+* Zustand is an alternate to Zustand
+* Redux offers easy debugging
+* Redux offers State management
+* React and Redux are great combo : https://react-redux.js.org/introduction/getting-started
+* Steps to use
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to app
+- Create a slice
+- Dispatch an action
+- Read the data using selector
+* To install use this commands : npm install @reduxjs/toolkit and npm install react-redux
+* Selector hook give access to redux store
+
+
+
+
+2:50:40
 
 
 

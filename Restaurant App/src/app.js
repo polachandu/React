@@ -8,6 +8,8 @@ import ErrorComponent from "./components/ErrorComponent";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/Shimmer";
+import { Provide } from "react-redux";
+import appStore from "./utils/appStore";
 // import Grocery from "./components/Grocery"
 
 /**
@@ -29,10 +31,12 @@ const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayoutComponent = () => {
   return (
+    <Provider store={ appStore }>
     <div className="app">
       <HeaderComponent />
       <Outlet />
     </div>
+    </Provider>
   );
 };
 
