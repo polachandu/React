@@ -175,6 +175,8 @@ link: https://github.com/acdlite/react-fiber-architecture
 - Read the data using selector
 * To install use this commands : npm install @reduxjs/toolkit and npm install react-redux
 * Selector hook give access to redux store
+* Redux uses immer library in the background
+
 
 
 
@@ -206,5 +208,7 @@ what is REM in CSS.
 Lifting the state up
 props drilling
 Go through about userContext.Consumer and userContext.Provider
+Go through reducer and reducers keywords
+RTK Query KickStart
 
 

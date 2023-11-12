@@ -8,7 +8,7 @@ import ErrorComponent from "./components/ErrorComponent";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/Shimmer";
-import { Provide } from "react-redux";
+import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 // import Grocery from "./components/Grocery"
 
