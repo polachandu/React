@@ -176,6 +176,22 @@ link: https://github.com/acdlite/react-fiber-architecture
 * To install use this commands : npm install @reduxjs/toolkit and npm install react-redux
 * Selector hook give access to redux store
 * Redux uses immer library in the background
+-----------------------------------------------------------------------------------------------------
+# Types of Testing
+* Unit Testing
+* Integration Testing
+* End to End Testing
+-----------------------------------------------------------------------------------------------------
+# REACT Testing Library
+* It is built on top of DOM Testing library - https://testing-library.com/docs/react-testing-library/intro/
+* Install babel dependencies and configure it - It uses jest library - https://jestjs.io/docs/getting-started
+* To install REACT testing library - npm install -D @testing-library/react
+* To install jest - npm install -D jest
+* Go through - https://parceljs.org/languages/javascript/
+* Configure Parcel config to disable the default Babel transpiler
+* Jest Configuration - npx jest --init
+* JSDOM - Test cases doesn't run on browser, they need a browser when these test cases are executing so JSDOM give it to us
+*
 
 
 
