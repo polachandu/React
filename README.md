@@ -191,9 +191,11 @@ link: https://github.com/acdlite/react-fiber-architecture
 * Configure Parcel config to disable the default Babel transpiler
 * Jest Configuration - npx jest --init
 * JSDOM - Test cases doesn't run on browser, they need a browser when these test cases are executing so JSDOM give it to us
-*
+* Install jsdom library - npm install --save-dev jest-environment-jsdom
+* __ in the front and __ in the back is called dunder
+* 
 
-
+01:08:24
 
 
 
