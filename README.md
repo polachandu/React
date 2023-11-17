@@ -193,11 +193,10 @@ link: https://github.com/acdlite/react-fiber-architecture
 * JSDOM - Test cases doesn't run on browser, they need a browser when these test cases are executing so JSDOM give it to us
 * Install jsdom library - npm install --save-dev jest-environment-jsdom
 * __ in the front and __ in the back is called dunder
-* 
-
-01:08:24
+*  Install @babel/preset-react by using this command - npm i -D @babel/preset-react 
 
 
+1:25:57
 
 2:50:40
 
