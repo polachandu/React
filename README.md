@@ -196,8 +196,10 @@ link: https://github.com/acdlite/react-fiber-architecture
 *  Install @babel/preset-react by using this command - npm i -D @babel/preset-react : This will help babel to transpile the code from jsx to html in order jsdom to understand it
 * Install @testing-library/jest-dom
 * test and it are same. They are nothing but alias to each.
+* describe is a block and it contains list of test cases.
+* 
 
-1:28:40
+2:10:37
 
 2:50:40
 

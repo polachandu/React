@@ -1,4 +1,3 @@
-import { useEffect } from "react/cjs/react.production.min";
 import { APP_LOGO_URL } from "../utils/constants";
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
