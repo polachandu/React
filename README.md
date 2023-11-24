@@ -197,7 +197,7 @@ link: https://github.com/acdlite/react-fiber-architecture
 * Install @testing-library/jest-dom
 * test and it are same. They are nothing but alias to each.
 * describe is a block and it contains list of test cases.
-* 
+* <Link> is from REACT-ROUTER-DOM
 
 2:10:37
 
