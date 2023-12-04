@@ -204,6 +204,14 @@ link: https://github.com/acdlite/react-fiber-architecture
 2:50:40
 
 
+-----------------------------------------------------------------------------------------------------
+
+https://tailwindcss.com/docs/guides/parcel
+https://react-redux.js.org/introduction/getting-started
+https://parceljs.org/languages/javascript/
+https://testing-library.com/docs/react-testing-library/setup/#jest-28
+https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
+
 
 
 
